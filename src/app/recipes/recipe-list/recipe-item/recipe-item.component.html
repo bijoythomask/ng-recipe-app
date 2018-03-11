@@ -1,11 +1,11 @@
-<p>
-    <a href="#" class="list-group-item mt-1" (click)="onItemSelected()">
-        <div class="pull-left">
-            <h4 class="list-group-item-heading">{{recipeItem.name}}</h4>
-            <p class="list-group-item-text">{{recipeItem.description}}</p>
-        </div>
-        <span class="pull-right">
-            <img [src]="recipeItem.imagePath" class="img-responsive" alt="{{recipeItem.description}}" style="max-height: 50px;">
-        </span>
-    </a>
-</p>
+
+<a class="list-group-item mt-1 clearfix" [routerLink]="[index]" routerLinkActive="active">
+    <div class="pull-left">
+        <h4 class="list-group-item-heading">{{recipeItem.name}}</h4>
+        <p class="list-group-item-text">{{recipeItem.description}}</p>
+    </div>
+    <span class="pull-right">
+        <img [src]="recipeItem.imagePath" class="img-responsive" alt="{{recipeItem.description}}" style="max-height: 50px;">
+    </span>
+</a>
+
