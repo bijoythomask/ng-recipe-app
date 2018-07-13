@@ -40,7 +40,7 @@ export class ShoppingListService {
      console.log('item updated' + item);
   }
 
-  public deleteIngredient(index:number) {
+  public deleteIngredient(index: number) {
     this.ingredients.splice(index, 1);
     this.ingredientUpdated.next(this.ingredients.slice());
   }
